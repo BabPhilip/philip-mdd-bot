@@ -1,22 +1,67 @@
-# Philip MDD Bot (Phil D Wiz)
+# PhilzBab Agent 🤖
 
-Phase 1: Core commands implemented, AI via Hugging Face, fun/games, owner/admin utilities (internal), vCard contact sending, health & deploy notes.
+**AI-Powered 3D Responsive Website Builder**
 
-This repo was updated to implement Phase 1 per your approval. The bot now:
-- Responds to a large static menu (rebranded as Phil D Wiz) on `menu`/`help`/`start`.
-- Accepts dot-prefixed commands (e.g., `.ai`) and plain commands (e.g., `ai`).
-- Provides AI replies via Hugging Face Inference when `HF_API_TOKEN` is set.
-- Implements fun / games commands (rps, dice, coin, trivia) with server-side logic.
-- Implements owner/admin internal commands (.addsudo, .listsudo, .ban, .unban) managing an in-memory store (persist later).
-- Blocks unsafe/illegal commands with a refusal message.
+## Features
 
-Run locally
-1. Copy .env.example -> .env and fill values.
-2. npm install
-3. npm start
+- **AI Chat Interface**: Describe your vision in natural language
+- **3D Website Generation**: Automatic HTML/CSS/JavaScript generation with Three.js
+- **Live Preview**: See your site render in real-time
+- **Responsive Design**: Works on all devices
+- **Smooth Animations**: Built-in transitions and effects
+- **Easy Deployment**: Export to Netlify with one click
 
-Environment variables (.env.example)
-- ACCESS_TOKEN, PHONE_NUMBER_ID, VERIFY_TOKEN, HF_API_TOKEN (optional), HF_MODEL (optional)
+## Quick Start
 
-Deployment
-- Railway recommended. See DEPLOYMENT.md for step-by-step instructions.
+```bash
+npm install
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000)
+
+## How to Use
+
+1. **Describe Your Website**: Tell the agent what you want to build
+2. **Customize**: Provide specific details about design, colors, animations
+3. **Generate**: Agent creates the code automatically
+4. **Preview**: See your site in real-time
+5. **Deploy**: Export and host on Netlify
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, React 18, TypeScript
+- **3D Graphics**: Three.js
+- **Styling**: Tailwind CSS, Framer Motion
+- **State Management**: Zustand
+- **Backend**: Next.js API Routes
+- **Deployment**: Netlify
+
+## Project Structure
+
+```
+philzbab-agent/
+├── app/              # Next.js app directory
+├── components/       # React components
+├── lib/              # Utility functions
+├── store/            # State management
+├── types/            # TypeScript types
+└── public/           # Static assets
+```
+
+## Environment Setup
+
+Copy `.env.local.example` to `.env.local` and configure if using external LLM.
+
+## Deployment
+
+Deploy to Netlify:
+
+```bash
+npm install netlify-cli -g
+netlify deploy --prod
+```
+
+---
+
+**Made by BabPhilip** - PhilzBab Agent v1.0.0
